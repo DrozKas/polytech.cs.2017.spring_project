@@ -25,7 +25,7 @@ make clean
 ````
 
 ## Authors
-* **Name Surname** - xxx@spbstu.ru
+* **Andrey Drozzhin** - andreykasatka1708@gmail.com
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

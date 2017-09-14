@@ -1,0 +1,51 @@
+\hypertarget{struct_pa_version_info}{}\section{Pa\+Version\+Info Struct Reference}
+\label{struct_pa_version_info}\index{Pa\+Version\+Info@{Pa\+Version\+Info}}
+
+
+{\ttfamily \#include $<$portaudio.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_pa_version_info_a98da9d58cccbb07d82731bd51526da33}\label{struct_pa_version_info_a98da9d58cccbb07d82731bd51526da33}} 
+int {\bfseries version\+Major}
+\item 
+\mbox{\Hypertarget{struct_pa_version_info_adbb78d06aff1f9fc6328987c36052f87}\label{struct_pa_version_info_adbb78d06aff1f9fc6328987c36052f87}} 
+int {\bfseries version\+Minor}
+\item 
+\mbox{\Hypertarget{struct_pa_version_info_a307d89c6be2aa100a2376cb002bf3b63}\label{struct_pa_version_info_a307d89c6be2aa100a2376cb002bf3b63}} 
+int {\bfseries version\+Sub\+Minor}
+\item 
+const char $\ast$ \hyperlink{struct_pa_version_info_a4fb1c35ae79965090b81a015b1eff05f}{version\+Control\+Revision}
+\item 
+const char $\ast$ \hyperlink{struct_pa_version_info_a0364a83bb08835d1d044611a4bda5477}{version\+Text}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A structure containing Port\+Audio A\+PI version information. \begin{DoxySeeAlso}{See also}
+\hyperlink{portaudio_8h_ad74adc9406a64c3fb13c228c3381a121}{Pa\+\_\+\+Get\+Version\+Info}, \hyperlink{portaudio_8h_ac20e3ac459960f140910d94b5a61125e}{pa\+Make\+Version\+Number} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+Available as of 19.\+5.\+0. 
+\end{DoxyVersion}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_pa_version_info_a4fb1c35ae79965090b81a015b1eff05f}\label{struct_pa_version_info_a4fb1c35ae79965090b81a015b1eff05f}} 
+\index{Pa\+Version\+Info@{Pa\+Version\+Info}!version\+Control\+Revision@{version\+Control\+Revision}}
+\index{version\+Control\+Revision@{version\+Control\+Revision}!Pa\+Version\+Info@{Pa\+Version\+Info}}
+\subsubsection{\texorpdfstring{version\+Control\+Revision}{versionControlRevision}}
+{\footnotesize\ttfamily const char$\ast$ version\+Control\+Revision}
+
+This is currently the Git revision hash but may change in the future. The version\+Control\+Revision is updated by running a script before compiling the library. If the update does not occur, this value may refer to an earlier revision. \mbox{\Hypertarget{struct_pa_version_info_a0364a83bb08835d1d044611a4bda5477}\label{struct_pa_version_info_a0364a83bb08835d1d044611a4bda5477}} 
+\index{Pa\+Version\+Info@{Pa\+Version\+Info}!version\+Text@{version\+Text}}
+\index{version\+Text@{version\+Text}!Pa\+Version\+Info@{Pa\+Version\+Info}}
+\subsubsection{\texorpdfstring{version\+Text}{versionText}}
+{\footnotesize\ttfamily const char$\ast$ version\+Text}
+
+Version as a string, for example \char`\"{}\+Port\+Audio V19.\+5.\+0-\/devel, revision 1952\+M\char`\"{} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{portaudio_8h}{portaudio.\+h}\end{DoxyCompactItemize}

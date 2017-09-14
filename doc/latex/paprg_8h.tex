@@ -1,0 +1,79 @@
+\hypertarget{paprg_8h}{}\section{paprg.\+h File Reference}
+\label{paprg_8h}\index{paprg.\+h@{paprg.\+h}}
+
+
+Заголовочный файл для библиотеки  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}portaudio.\+h\char`\"{}}\newline
+Include dependency graph for paprg.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{paprg_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{paprg_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_pa_data}{Pa\+Data}
+\begin{DoxyCompactList}\small\item\em Структура для передачи данных в функцию обратного вызова. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{paprg_8h_a4b76a0c2859cfd819a343a780070ee2b}\label{paprg_8h_a4b76a0c2859cfd819a343a780070ee2b}} 
+\#define \hyperlink{paprg_8h_a4b76a0c2859cfd819a343a780070ee2b}{S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+TE}~(44100)
+\begin{DoxyCompactList}\small\item\em Частота дискретизации (сколько раз в секунду будет изменяться сигнал на выходное устройство) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{paprg_8h_af4f62216aa14e0407faa6631e9ec4c62}\label{paprg_8h_af4f62216aa14e0407faa6631e9ec4c62}} 
+\#define \hyperlink{paprg_8h_af4f62216aa14e0407faa6631e9ec4c62}{F\+R\+A\+M\+E\+S\+\_\+\+P\+E\+R\+\_\+\+B\+U\+F\+F\+ER}~(64)
+\begin{DoxyCompactList}\small\item\em Буфер вывода. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{paprg_8h_ae71449b1cc6e6250b91f539153a7a0d3}\label{paprg_8h_ae71449b1cc6e6250b91f539153a7a0d3}} 
+\#define \hyperlink{paprg_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\+\_\+\+PI}~(3.\+14159265)
+\begin{DoxyCompactList}\small\item\em Константа Pi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{paprg_8h_a83fd123b66ed381181358808dba1663c}{Pa\+Prg\+Play} (float frequency, unsigned int mlsec, Pa\+Stream\+Parameters $\ast$output\+Parameters)
+\begin{DoxyCompactList}\small\item\em Функция, которая играет звук заданной частоты заданное время. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Заголовочный файл для библиотеки 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{paprg_8h_a83fd123b66ed381181358808dba1663c}\label{paprg_8h_a83fd123b66ed381181358808dba1663c}} 
+\index{paprg.\+h@{paprg.\+h}!Pa\+Prg\+Play@{Pa\+Prg\+Play}}
+\index{Pa\+Prg\+Play@{Pa\+Prg\+Play}!paprg.\+h@{paprg.\+h}}
+\subsubsection{\texorpdfstring{Pa\+Prg\+Play()}{PaPrgPlay()}}
+{\footnotesize\ttfamily int Pa\+Prg\+Play (\begin{DoxyParamCaption}\item[{float}]{frequency,  }\item[{unsigned int}]{mlsec,  }\item[{Pa\+Stream\+Parameters $\ast$}]{output\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Функция, которая играет звук заданной частоты заданное время. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency} & -\/ частота \\
+\hline
+{\em mlsec} & -\/ Время (в милисекундах). \\
+\hline
+{\em output\+Parameters} & -\/ Информация о устройстве вывода. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}int\mbox{]} код ошибки 
+\end{DoxyReturn}
